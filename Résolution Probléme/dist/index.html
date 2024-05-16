@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Expandable Animated Card Slider</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="game-section">
+  <h2 class="line-title">Jeux de résolution de problème</h2>
+  <p>Ces activités permettent de structurer notre pensée, d’exercer notre faculté de raisonnement et sont un apport dans le développement du langage.</p>
+  <div class="owl-carousel custom-carousel owl-theme">
+    <div class="item active" style="background-image: url(https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg);">
+      <div class="item-desc">
+        <h3><a href="/Jeux/Chess no/dist/index.html">Jeu d'Échecs</a></h3>
+        <p>Jouez aux échecs contre notre IA, apprenez les règles et progressez.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://t3.ftcdn.net/jpg/03/40/23/52/360_F_340235296_vTSEojjiK3hWat9mcX4cmZ6eRshdGUP2.jpg);">
+      <div class="item-desc">
+        <h3><a href="/Jeux/Connect Four no/dist/index.html">Puissance 4</a></h3>
+        <p>Puissance 4 est un jeu de stratégie. Le but du jeu est d'aligner 4 pions horizontalement, verticalement ou en diagonale.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://images.unsplash.com/photo-1562975327-29a8cbfd5be6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cnViaWtzJTIwY3ViZXxlbnwwfHwwfHx8MA%3D%3D);">
+      <div class="item-desc">
+        <h3><a href="/Jeux/Cubix Cube/dist/index.html">Rubik's cube</a></h3>
+        <p>Le Rubik's Cube est une véritable combinaison de mathématiques, d'art et de sciences. Il est destiné à mettre votre esprit et vos compétences en résolution de problèmes au défi.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://img.freepik.com/photos-premium/labyrinthe-labyrinthe_378362-1490.jpg);">
+      <div class="item-desc">
+        <h3><a href="">Labyrinthe</a></h3>
+        <p>Frayez vous un chemin qui mène aux trésors cachées dans ce labyrinthe!</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAAEpCAMAAAA0+0lyAAAAq1BMVEXexK0AAADew67fxa7hx6/AqpLbwarcwazozbPexKvly7HVvKbbw6vkybLYv6njya2znIpRRj+MfWzXwKYxLSUyLSgvLCLbv6bnzK+nkX6hjn6VhHJzZFfGr5ZPRjypkoGwnINXT0VmWVCfjnpFOzYmICALCQV2aVyDd2hiWEo9ODA1LCorJSBDODTSt6UeGhYYFBaHdmu4pItbU0d8a2FjVU7GsZnDqZmUh3M0izsdAAAH1UlEQVR4nO2cDV/iOBCHoQmhSZtWQA4EXRbf3XMX3duD+/6f7GamxTdK6Uol6TqPikD96d90MpmXtK1WQxDCtYI/liBwraACMT02QirDMAzDMAxTFxz9MQzDMAzD1EmDoqsGSf0UcF2WYZiPhz0NwzAMwzDM56b+eDBWdf/GnAaFriyV8Z6ANoU25fQ3SCrjHx+1KDFOeO/pjGtVwfwBNOPCCCGtCQFjpNeSA2sHX/un817v/HYWhajWTwKrLy7bz1z1I0/FWt2/br/hdJTqGv9ETb/L/LzP5A3nN7c3d99ysVPfBla1zC0pu5xE1hpjQjDac3pnrqVPs0spQ7ouV9ZmuoQIAhOd4pt/DzwaV9U1dyhqEr4eQBF2ruDt+5HzYV1nukqkePavlzZ4qQlDCqm/wJHvps659R5IqgLkESr9IQtSH2HmcOyXPbi4AkCp1guQs7KF9QShh3Cw44O5glKa/JNipaB1gCYwPrCsAnBQR6ClF26t0aRTOH5kg+5BhW2iVEJSVnJ7hK3BDfRAqtssHidVOqRB3f5DBv+XKOgqp+mC6iaDCITMSgY1s9aJTbpOE1wVq9EFCIGTWzJk4167fW4Stxag4mR0Awtqud+UfQhibORaajT4B4bMlqhQLfkVBl5GiXOpEE33bWmGLX+ijbiXOoIwdVq+GMkzdAFRciBRxaDUYxrVMnQHpCbupQ56GI6UntsUbVU4l5oMIH6eb19WcVql4M+ubeS2bgjr6gg80YMprX2P73BljRyvVioZ4PReilKpkMk+2sRxNRYsQGPsbEqkkq9aBYlybAGxMpjslWWlY1gkFkHgNgRAC+hKdEUl7oqOPzoPAkFq3Eox1YsKhxUjb4PFoa5w3zgAMQKH7TIt0grmafrZoPrRyTU3WJ4Ki49hNnu/LfE6OFpjueomFBvpvraotL2Uvkhttc6oOjWyb4xA0Nlvz6xHjXxDWhcnxmKDORcs7NkXqg8Zj5RinLeg+tqRDq20Qkpr005WCpz5MqXWCDUnYdfnk84yijonN1m5dbHyTSlgThZvi9bopazwS2mMQZPU0+NXOq8fI2+81BuEtZ3bLw+Zzu+/wG4D55XVrQhrxulgebaMdGq8KqwXIgIhBd8pbW+4y/4OnAeaL/DT9TGvwVq2aw0VaYxSzLa8morbiVU8OdJ1a/2Y5S88pRylXj5EqVxiYOV/EKBa2tAGCz86wCVgx+0ki1cjHzrAW8GpJLCN/Q3C67lxLacU0Ept7A51gD0fVoltzH+tvMemmms5ZagWbbeJJO27mHppAip/yGupLR1iXUX76rBw4UdH9YAlCnKuv4qLgz6g5UVW+IHn4xvqZriWtA09uqYudkDPaZuIa0nFqC6VhFd54Uf667BgSUX7PF+7KJ0et9v3PpYtsD+BtcAkCPJcO8V21dRD56qyTtr0RT1tjNKVjzmmgRXq6mXljxzWlm6GU0y+8+vFKI5vqWXhTtMGlKAKck6v+xMiRecV1pxt7JcKgVZyVEsZxC8LWDZbEvaTVjNan7WLNlvgQrvY32HVOTV12qONYW9/565Wcf2Um8d6s22RDw3v/MpdIExdZI5q40zRfsBzjxwW9Sdxvd8sCtOhlT/Dio5qHhZuYRQppoV+DCsG1Lgl5Ico3m1JyfaFD7kLeH+a5uSoiqQK3GXx4EPuAlItaLne7vwEutzH0HVxUKluIk9o0++mlPXCNT7NNzC73RWs4iR9aLe/25bQGpaCQMMnBAJa41UsWuL3dECzLnK8gVnFmryRpcvsrLE2DMdImH2G9PI/9GWuNzArtdzsrBdy3+o6vTIA0pRpRantTg0Ta4+WPYxqp6LSK8fTCoc16VSirgv79hEbC1kFD5rGlK7kMnzMTl9CQrNb7VBvTa3ffvVDB7LTXZH1YVTUYuvNaP0xh4BtgWHqoSn7P5qIAPBmXpBT4e5FfPn06FobQqde2gxjJD0a+/QGgU/d77pQWFs9OsmZ5Z+zWfaFr3IiqRxfdI0XqZxWSlgi59dbqUH6VyWpR0kNV7HtTgO3j4dKRih1MTyGjyE+Zt/gCxnSkyHuFj+KkuoWsO0P7rPJXCU0qrMwNSY1WxiPc6l7m8BeUpXCXurECg1eSSOt7BsAXgpeiVindUndJ3tDWx2CVLkupr1euRT+L3VK3YNnqes9IepNLghSY0+kqlxqCTWMag1p+/OobufZAPb/e3vwJLXk336S6rpmNdDHJHX7Gv8k1W0pKF+tJqasJOWJ1Gy1mpQ1e5Qnttod7JRahweoAbTV6lIPpaqQta1W86uHUlWIUrtt9Umq68ZVbqtls9sTD5AvAZVG1b1UstVGjKpumNRqtupyWqlnqVUWVrceoPsbo+rUWalqzmrsia1SGlg+rcZexKsQWQ2regDXUn/DWTmNrNRTFuD9tGqpmEb1YsNZBS+SzBql7ley+I141bXUnfGq8sJW0QPQqBZuUV2X1j2x1UzqLLT2qay+QX2VwH2U5n71vF/K1AOp65pVlaq1cwMAqZe7dQKrxPVqpZQ4m395RS8Hnj2/0TeJ291rVPoVdNf9HVjh+ga8jYPbwQxDeHqjKYZhGOaQNGgxaJBUhmEY5tPCqxXDfGrYAzAMwzAMwzAMw7wTrqkwDMN8ctzfZq4yDZLKMAzD1E+DUheWyjC1sveN8Q52pzoh/gfbenLEmExzXAAAAABJRU5ErkJggg==);">
+      <div class="item-desc">
+        <h3><a href="/Jeux/Match the forms/dist/index.html">Jeu de Liaison</a></h3>
+        <p>Lier les objets géométriques par rapport à leur similarité.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://i.pinimg.com/originals/dc/2c/48/dc2c482294100808cced408abb9cdf7d.jpg);">
+      <div class="item-desc">
+        <h3><a href="/Jeux/math-quiz no/dist/index.html">Quizz de Math</a></h3>
+        <p>Jouez à un quiz de Mathématiques. Répondez à des questions pour tester vos connaissance en matière de Mathématiques.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
