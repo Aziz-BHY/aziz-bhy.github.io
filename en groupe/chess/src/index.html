@@ -1,0 +1,9 @@
+<body ng-app="myApp" ng-controller="GameController">
+  <div id="board">
+		<div class="row" ng-repeat="y in widths">
+			 <div class="box" ng-repeat="x in widths" ng-attr-id="{{'box-' + x + '-' + y}}" piece=""></div>
+		</div>
+  </div>
+  <div id="player">BLACK'S TURN</div>
+  <div id="restart-btn">RESTART</div>
+</body>
